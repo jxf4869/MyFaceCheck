@@ -59,6 +59,8 @@ CMyFaceCheckDlg::CMyFaceCheckDlg(CWnd* pParent /*=nullptr*/)
 void CMyFaceCheckDlg::DoDataExchange(CDataExchange* pDX)
 {
 	CDialogEx::DoDataExchange(pDX);
+	DDX_Control(pDX, IDC_STATIC1, m_btnLogin);
+	DDX_Control(pDX, IDC_STATIC2, m_btnRegister);
 }
 
 BEGIN_MESSAGE_MAP(CMyFaceCheckDlg, CDialogEx)
@@ -102,6 +104,10 @@ BOOL CMyFaceCheckDlg::OnInitDialog()
 	SetIcon(m_hIcon, FALSE);		// 设置小图标
 
 	// TODO: 在此添加额外的初始化代码
+	LoadPicture(m_imgBK, IDB_PNG2);
+
+	m_btnLogin.Init(IDB_PNG1, 4, BTN_TYPE_NORMAL);
+	m_btnRegister.Init(IDB_PNG3, 4, BTN_TYPE_NORMAL);
 
 	return TRUE;  // 除非将焦点设置到控件，否则返回 TRUE
 }
@@ -144,7 +150,7 @@ void CMyFaceCheckDlg::OnPaint()
 	}
 	else
 	{
-		CDialogEx::OnPaint();
+		drawPicOnPait(&m_imgBK,this,0,0);
 	}
 }
 

@@ -183,6 +183,7 @@
     </ResourceCompile>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="ButtonPNG.h" />
     <ClInclude Include="framework.h" />
     <ClInclude Include="MyFaceCheck.h" />
     <ClInclude Include="MyFaceCheckDlg.h" />
@@ -192,6 +193,7 @@
     <ClInclude Include="winLogin.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="ButtonPNG.cpp" />
     <ClCompile Include="MyFaceCheck.cpp" />
     <ClCompile Include="MyFaceCheckDlg.cpp" />
     <ClCompile Include="pch.cpp">
@@ -210,7 +212,10 @@
   </ItemGroup>
   <ItemGroup>
     <Image Include="res\bg1.bmp" />
+    <Image Include="res\bg1.png" />
+    <Image Include="res\login.png" />
     <Image Include="res\MyFaceCheck.ico" />
+    <Image Include="res\register.png" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

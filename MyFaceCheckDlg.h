@@ -3,7 +3,7 @@
 //
 
 #pragma once
-
+#include "ButtonPNG.h"
 
 // CMyFaceCheckDlg 对话框
 class CMyFaceCheckDlg : public CDialogEx
@@ -34,4 +34,8 @@ protected:
 public:
 	afx_msg void OnBnClickedStatic1();
 	afx_msg void OnBnClickedStatic2();
+	ButtonPNG m_btnLogin;
+
+	CImage m_imgBK;
+	ButtonPNG m_btnRegister;
 };

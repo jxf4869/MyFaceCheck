@@ -36,6 +36,9 @@
     <ClInclude Include="winLogin.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="ButtonPNG.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="MyFaceCheck.cpp">
@@ -48,6 +51,9 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="winLogin.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ButtonPNG.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
@@ -66,6 +72,15 @@
       <Filter>资源文件</Filter>
     </Image>
     <Image Include="res\bg1.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\login.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\bg1.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\register.png">
       <Filter>资源文件</Filter>
     </Image>
   </ItemGroup>
